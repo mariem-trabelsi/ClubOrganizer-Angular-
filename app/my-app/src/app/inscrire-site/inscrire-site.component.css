@@ -1,0 +1,10 @@
+.container{
+
+background-size: cover;
+background-position: center ;
+background-attachment: fixed;
+background: rgb(144, 197, 247);
+}
+p{
+ font-family: "Lucida Console", "Courier New", monospace;
+}
