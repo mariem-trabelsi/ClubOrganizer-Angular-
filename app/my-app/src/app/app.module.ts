@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { InscrireSiteComponent } from './inscrire-site/inscrire-site.component';
 import { AbonnerClubComponent } from './abonner-club/abonner-club.component';
 import { CreerClubComponent } from './creer-club/creer-club.component';
+import { SAuthentifierComponent } from './s-authentifier/s-authentifier.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CreerClubComponent } from './creer-club/creer-club.component';
     HomeComponent,
     InscrireSiteComponent,
     AbonnerClubComponent,
-    CreerClubComponent
+    CreerClubComponent,
+    SAuthentifierComponent
   ],
   imports: [
     BrowserModule,
