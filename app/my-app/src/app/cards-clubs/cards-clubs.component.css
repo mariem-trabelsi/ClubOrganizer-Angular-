@@ -1,8 +1,4 @@
 .container{
-    background-color: azure;
-}
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    color:gold;
+    background-color: lemonchiffon;
+    min-height:100%;
 }
