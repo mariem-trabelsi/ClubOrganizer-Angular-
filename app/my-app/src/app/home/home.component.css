@@ -19,6 +19,10 @@ nav a {
 nav a:hover{
 color:lavenderblush}
 
+html{
+    background-image: url(https://www.epfl.ch/education/master/wp-content/uploads/2018/11/CDM_MTE_MA_X-1920x1080.jpg);
+
+}
 
 body{
     scroll-behavior: smooth;
@@ -27,6 +31,7 @@ body{
     min-height: 100%;
     position: relative;
     padding-bottom:30px;
+   
 }
 
 
@@ -35,7 +40,7 @@ footer {
         background-color:lemonchiffon;
         color: black;
         width: 100%;
-        position:absolute;
+        position:relative;
         height:70px;
         bottom: 0;
         left: 0;
