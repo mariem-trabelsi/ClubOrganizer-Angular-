@@ -1,10 +1,10 @@
 #yes{
     align-items: center;
-    background-image: url(https://ac-franchise.com/wp-content/uploads/2020/11/Profil-Entrepreneur-Franchise-900x450-1.jpg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaQyQZ3lh2IhxGswxreZHO5wCK1YkfkNB5w&usqp=CAU);
     background-position:right;
     background-attachment: fixed;
     display: flex;
-    background-repeat: no-repeat;
+    background-repeat: round;
 }
 textarea {
     width: 100%;
@@ -19,7 +19,7 @@ textarea {
   }
 
   .btn {
-  background-color: #3bbae0;
+  background-color: pink;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -28,5 +28,6 @@ textarea {
   cursor: pointer;
 }
 .container{
-    background-color: azure;
+    background-color: lemonchiffon
 }
+
