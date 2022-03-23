@@ -21,8 +21,12 @@
     <textarea class="form-control" id="bio" rows="3" placeholder="Quoi de neuf ?"></textarea>
   </div>
   <div style="padding-left:130px">
-  <button  style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
+  <button id="b"  type="button" onclick="myFunction()" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
   </div>
+
+  <div id="pub">
+   <p id="demo"></p>
+   </div>
 
 
 
@@ -68,6 +72,13 @@
           
          <br> 
 </p>
+  <script>
+    
+function myFunction() {
+  document.getElementById('demo').innerHTML = document.getElementById('ok').value;
+}
+
+</script>
 </body>
 <footer>
   <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:Georgia, 'Times New Roman', Times, serif"> Powered by <i class="fas fa-power-off"> glsi</i></p>
