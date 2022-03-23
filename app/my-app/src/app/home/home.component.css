@@ -69,6 +69,7 @@ footer {
         border: none;
         cursor: pointer;
         font-family: cursive;
+        text-align: center;
     }
     button:hover {
         background-color:lavenderblush;
