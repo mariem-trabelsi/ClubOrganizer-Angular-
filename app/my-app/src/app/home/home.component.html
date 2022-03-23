@@ -15,6 +15,17 @@
 </nav>
 
 <body class="container" style="padding-top: 30px;">
+
+  <div style="padding-right:130px ;padding-left:130px; padding-bottom: 3px;" class="form-group ">
+    <label for="bio"></label>
+    <textarea class="form-control" id="bio" rows="3" placeholder="Quoi de neuf ?"></textarea>
+  </div>
+  <div style="padding-left:400px ;">
+  <button style="width:500px;"   type="submit" [disabled]="isAuth" class="btn">publier</button>
+  </div>
+
+
+
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ducimus, ea repellat assumenda esse reiciendis architecto, quod aut veritatis magnam amet quam debitis 
         uod aut veritatis magnam amet quam debitis 

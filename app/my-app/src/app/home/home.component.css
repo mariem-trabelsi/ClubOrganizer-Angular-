@@ -13,6 +13,7 @@ nav a {
     font-size: 1.9em;
     font-weight:900px;
     padding-left: 30px;
+    font-family: cursive;
     
 }
 
@@ -48,3 +49,30 @@ footer {
     }
 
 
+    textarea{
+        background-color:lightyellow;
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 200px;
+        font-family: cursive;
+    }
+    textarea:hover {
+        background-color:lightgrey;
+        border: 1px solid black;
+    }
+
+    
+   button{
+        background-color:plum;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-family: cursive;
+    }
+    button:hover {
+        background-color:lavenderblush;
+        border: 2px solid black;
+        font-weight:2rem;
+        
+    }
