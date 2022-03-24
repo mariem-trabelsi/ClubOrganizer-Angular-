@@ -17,6 +17,7 @@ import { NavComponent } from './nav/nav.component';
 import { LogoComponent } from './logo/logo.component';
 import { MeetingsComponent } from './meetings/meetings.component';
 import { ParametresComponent } from './parametres/parametres.component';
+import { EventComponent } from './event/event.component';
 const appRoutes: Routes =[
   {path:'creerClub',component:CreerClubComponent},
   {path:'inscrireSite',component:InscrireSiteComponent},
@@ -25,6 +26,7 @@ const appRoutes: Routes =[
   {path:'sAuthentifier',component:SAuthentifierComponent},
   {path:'logo',component:LogoComponent},
   {path:'meetings',component:MeetingsComponent},
+  {path:'event',component:EventComponent},
   {path:'parametres',component:ParametresComponent},
   {path:'abonnerClub',component:AbonnerClubComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
@@ -43,7 +45,8 @@ const appRoutes: Routes =[
     NavComponent,
     LogoComponent,
     MeetingsComponent,
-    ParametresComponent
+    ParametresComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
