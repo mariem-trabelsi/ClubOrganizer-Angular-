@@ -16,10 +16,11 @@ export class HomeComponent implements OnInit {
     if(this.publication.contenu != ''){
 
     this.publication.id=this.publications.length +1;
-    this.publications.push(/*{
-      id : this.publication.id,
-      contenu: this.publication.contenu}*/);
+    this.publications.push();
     }
+    /*{
+      id : this.publication.id,
+      contenu: this.publication.contenu}*/
      this.publication.contenu='';
     }
 

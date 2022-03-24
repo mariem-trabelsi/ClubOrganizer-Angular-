@@ -6,7 +6,7 @@
   </div>
 
   <div style="padding-left:130px">
-  <button id="b"  type="button" (click)="addPub()" style="width: 200px;"  type="submit" [disabled]="!isAuth" class="btn">publier</button>
+  <button id="b"  type="button" (click)="addPub()" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
   </div>
 
  
@@ -34,7 +34,7 @@
 
 
 
-       <p class="text-center info-text" style="font-family: cursive;">
+       <p class="text-center info-text" style="padding-top: 100px; font-family: cursive;">
         vous ne pouvez pas paratager aucune publication sans etre  membre dans <strong>ClubOrganizer</strong> .Vous etes les bienvenus !
        </p>
        <div style="align-items: center;">
