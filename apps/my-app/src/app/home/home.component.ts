@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   publications=[];
   publication = {id:0, contenu:''};
   isAuth= false;
+  pub="salut  !, vu la derniere ..."
   
   addPub(){
     if(this.publication.contenu != ''){
