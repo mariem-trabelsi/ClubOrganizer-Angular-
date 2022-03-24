@@ -16,14 +16,26 @@ textarea {
     background-color: lemonchiffon;
 }
 
-.btn {
-    background-color: lavenderblush;
-    border: none;
+
+
+input[reset][submit]{
     color: white;
+    border: none;
+    font-family: cursive;
+    text-align: center;
+}
+input[reset][submit]:hover {
+    background-color:lavenderblush;
+    border: 2px solid black;
+    font-weight:2rem;
+    
+}
+.btn {
+    background-color:plum;
+
+    border: none;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
   }
-
-  

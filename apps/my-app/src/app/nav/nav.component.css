@@ -1,0 +1,21 @@
+nav{
+    background-color:#fff;
+    width:max;
+    font-weight: bolder;
+    padding-top:10px;
+    display: flex; 
+    padding-bottom: 10px;
+    color:rgb(230, 109, 189);
+}
+nav a {
+    text-decoration: none;
+    color:rgb(230, 109, 189);
+    font-size: 1.9em;
+    font-weight:900px;
+    padding-left: 30px;
+    font-family: cursive;
+    
+}
+
+nav a:hover{
+color:pink}

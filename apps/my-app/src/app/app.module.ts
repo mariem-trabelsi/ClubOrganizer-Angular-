@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,17 @@ import { CreerClubComponent } from './creer-club/creer-club.component';
 import { SAuthentifierComponent } from './s-authentifier/s-authentifier.component';
 import { CardsClubsComponent } from './cards-clubs/cards-clubs.component';
 
+import {FormsModule} from '@angular/forms';
+import{RouterModule,Routes} from '@angular/router';
+import { NavComponent } from './nav/nav.component';
+const appRoutes: Routes =[
+  {path:'creerClub',component:CreerClubComponent},
+  {path:'inscrireSite',component:InscrireSiteComponent},
+  {path:'home',component:HomeComponent},
+  {path:'clubsCards',component:CardsClubsComponent},
+
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +30,14 @@ import { CardsClubsComponent } from './cards-clubs/cards-clubs.component';
     AbonnerClubComponent,
     CreerClubComponent,
     SAuthentifierComponent,
-    CardsClubsComponent
+    CardsClubsComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
