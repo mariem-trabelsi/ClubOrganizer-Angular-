@@ -19,7 +19,8 @@ const appRoutes: Routes =[
   {path:'inscrireSite',component:InscrireSiteComponent},
   {path:'home',component:HomeComponent},
   {path:'clubsCards',component:CardsClubsComponent},
-
+  {path:'sAuthentifier',component:SAuthentifierComponent},
+  {path:'abonnerClub',component:AbonnerClubComponent}
 ]
 
 @NgModule({
