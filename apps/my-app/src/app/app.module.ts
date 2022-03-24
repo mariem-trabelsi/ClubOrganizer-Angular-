@@ -14,14 +14,18 @@ import { CardsClubsComponent } from './cards-clubs/cards-clubs.component';
 import {FormsModule} from '@angular/forms';
 import{RouterModule,Routes} from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { LogoComponent } from './logo/logo.component';
 const appRoutes: Routes =[
   {path:'creerClub',component:CreerClubComponent},
   {path:'inscrireSite',component:InscrireSiteComponent},
   {path:'home',component:HomeComponent},
   {path:'clubsCards',component:CardsClubsComponent},
   {path:'sAuthentifier',component:SAuthentifierComponent},
-  {path:'abonnerClub',component:AbonnerClubComponent}
-]
+  {path:'logo',component:LogoComponent},
+  {path:'abonnerClub',component:AbonnerClubComponent},
+  {path:'',redirectTo:'/home',pathMatch:'full'}
+
+];
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ const appRoutes: Routes =[
     CreerClubComponent,
     SAuthentifierComponent,
     CardsClubsComponent,
-    NavComponent
+    NavComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

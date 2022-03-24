@@ -24,12 +24,17 @@ input[reset][submit]{
     font-family: cursive;
     text-align: center;
 }
-input[reset][submit]:hover {
-    background-color:lavenderblush;
-    border: 2px solid black;
-    font-weight:2rem;
-    
+input[type=reset]:hover {
+    background-color: lavenderblush;
+    color:lightpink;
+    border: 1px solid lavenderblush;
 }
+
+input[type=submit]:hover {
+    background-color: lavenderblush;
+    color:lightpink;
+    border: 1px solid lavenderblush;}
+    
 .btn {
     background-color:plum;
 
@@ -39,3 +44,4 @@ input[reset][submit]:hover {
     margin: 4px 2px;
     cursor: pointer;
   }
+ 

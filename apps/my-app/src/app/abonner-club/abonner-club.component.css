@@ -44,3 +44,8 @@ input[type=submit]:hover {
     color:lightpink;
     border: 1px solid lavenderblush;
 }
+input[type=reset]:hover {
+    background-color: lavenderblush;
+    color:lightpink;
+    border: 1px solid lavenderblush;
+}
