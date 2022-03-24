@@ -1,5 +1,5 @@
 <html>
-<body class="container" style="padding-top: 30px;">
+<body class="container" style="padding-top:110px;">
   <div style="padding-right:130px ;padding-left:130px;font-family: cursive; padding-bottom: 3px;" class="form-group ">
     <label for="bio"></label>
     <textarea  [(ngModel)]="publication.contenu" class="form-control" id="bio"  rows="3" placeholder="Quoi de neuf ?"></textarea>
@@ -17,11 +17,9 @@
        </p>
   </div>
 </div>
-<ng-template #noPublications>
-  <p style="font-family: cursive;" class="text-center"> Pas de Publications !</p>
-</ng-template>
 
-<div style="padding-left:130px;">
+
+<div style="padding-left:130px; display: none;">
   <div class="card" style="width: 50rem;">
     <div class="card-body">
       <h5 class="card-title">Ahmed Trabelsi</h5>
@@ -33,9 +31,11 @@
 
 
 
-
+<ng-template #noPublications>
+  <p style="font-family: cursive;" class="text-center"> Pas de Publications !</p>
+</ng-template>
        <p class="text-center info-text" style="padding-top: 100px; font-family: cursive;">
-        vous ne pouvez pas paratager aucune publication sans etre  membre dans <strong>ClubOrganizer</strong> .Vous etes les bienvenus !
+        Vous ne pouvez pas paratager aucune publication sans être  membre dans <strong>ClubOrganizer</strong> .Vous êtes les bienvenus !
        </p>
        <div style="align-items: center;">
        <button id="b1"  style="font-family: cursive; width: 100%;" routerLink="/inscrireSite" type="submit"  class="btn"> S'inscrire  </button>

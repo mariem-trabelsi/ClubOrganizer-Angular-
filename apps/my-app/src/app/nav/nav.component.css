@@ -2,7 +2,7 @@ nav{
     background-color:#fff;
     width:max;
     font-weight: bolder;
-    padding-top:10px;
+    padding-top :30px;
     display: flex; 
     padding-bottom: 10px;
     color:rgb(230, 109, 189);
@@ -19,3 +19,10 @@ nav a {
 
 nav a:hover{
 color:pink}
+
+.abc{
+    text-decoration: none;
+    color:lightblue;
+    padding-left: 30px;
+    font-family: cursive;
+}
