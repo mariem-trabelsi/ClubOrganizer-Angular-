@@ -1,6 +1,6 @@
 <html>
 <body class="container" style="padding-top: 30px;">
-  <div style="padding-right:130px ;padding-left:130px; padding-bottom: 3px;" class="form-group ">
+  <div style="padding-right:130px ;padding-left:130px;font-family: cursive; padding-bottom: 3px;" class="form-group ">
     <label for="bio"></label>
     <textarea  [(ngModel)]="publication.contenu" class="form-control" id="bio"  rows="3" placeholder="Quoi de neuf ?"></textarea>
   </div>
@@ -17,16 +17,16 @@
   </div>
 </div>
 <ng-template #noPublications>
-  <p class="text-center"> Pas de Publications !</p>
+  <p style="font-family: cursive;" class="text-center"> Pas de Publications !</p>
 </ng-template>
 
 
 
-       <p class="text-center info-text">
+       <p class="text-center info-text" style="font-family: cursive;">
         vous ne pouvez pas paratager aucune publication sans etre  membre dans <strong>ClubOrganizer</strong> .Vous etes les bienvenus !
        </p>
        <div style="align-items: center;">
-       <button id="b1"  style=" width: 100%;" routerLink="/inscrireSite" type="submit"  class="btn"> S'inscrire  </button>
+       <button id="b1"  style="font-family: cursive; width: 100%;" routerLink="/inscrireSite" type="submit"  class="btn"> S'inscrire  </button>
       </div>
   <script>
     
@@ -37,7 +37,7 @@ function myFunction() {
 </script>
 </body>
 <footer>
-  <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:Georgia, 'Times New Roman', Times, serif"> Powered by <i class="fas fa-power-off"> glsi</i></p>
+  <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:cursive"> Powered by <i class="fas fa-power-off"> glsi</i></p>
 </footer>
 
 </html>
