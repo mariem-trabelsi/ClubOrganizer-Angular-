@@ -6,10 +6,10 @@
   </div>
 
   <div style="padding-left:130px">
-  <button id="b"  type="button" (click)="addPub()" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
+  <button id="b"  onclick="fCopie()" type="button" (click)="addPub()" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
   </div>
 
- 
+  <p id="ok" class="text-center"></p>
  <div *ngIf="publications.length >0; else noPublications" >
   <div id="pub">
        <p *ngFor="let c in publications">
@@ -24,12 +24,10 @@
     <div class="card-body">
       <h5 class="card-title">Ahmed Trabelsi</h5>
       <h6 class="card-subtitle mb-2 text-muted">Proposition</h6>
-      <p class="card-text"></p>
+      <p class="card-text" id="pub"> </p>
     </div>
   </div>
 </div>
-
-
 
 <ng-template #noPublications>
 <p style="font-family: cursive;" class="text-center"> Pas de Publications !</p>
@@ -39,8 +37,8 @@ Vous ne pouvez pas paratager aucune publication sans être  membre dans <strong>
 </p>
 
 <script>
-function myFunction() {
-  document.getElementById('demo').innerHTML = document.getElementById('ok').value;
+function fCopie() {
+document.getElementById('ok').innerHTML = document.getElementById('bio').innerHTML;
 }
 </script>
 </body>
