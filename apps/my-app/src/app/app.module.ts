@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,16 +19,20 @@ import { LogoComponent } from './logo/logo.component';
 import { MeetingsComponent } from './meetings/meetings.component';
 import { ParametresComponent } from './parametres/parametres.component';
 import { EventComponent } from './event/event.component';
+import { PageClubComponent } from './page-club/page-club.component';
+import { InscritService } from './services/inscrit.service'; 
+
 const appRoutes: Routes =[
   {path:'creerClub',component:CreerClubComponent},
   {path:'inscrireSite',component:InscrireSiteComponent},
   {path:'home',component:HomeComponent},
   {path:'clubsCards',component:CardsClubsComponent},
-  {path:'sAuthentifier',component:SAuthentifierComponent},
+  {path:'sAuthentifier', component:SAuthentifierComponent},
   {path:'logo',component:LogoComponent},
   {path:'meetings',component:MeetingsComponent},
   {path:'event',component:EventComponent},
   {path:'parametres',component:ParametresComponent},
+  {path:'pageClub',component:PageClubComponent},
   {path:'abonnerClub',component:AbonnerClubComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
 
@@ -46,7 +51,8 @@ const appRoutes: Routes =[
     LogoComponent,
     MeetingsComponent,
     ParametresComponent,
-    EventComponent
+    EventComponent,
+    PageClubComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +60,7 @@ const appRoutes: Routes =[
     AppRoutingModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [InscritService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

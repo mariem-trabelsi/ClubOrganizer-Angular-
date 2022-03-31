@@ -1,15 +1,15 @@
  <body>
         <div id="container" class="container">
-            <form action="verification.php" method="POST">
+            <form (ngSubmit)="onSubmit2(form)" #form="ngForm">
                 <h1>Connexion</h1>
                 
                 <label><b>Nom d'utilisateur</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" ngModel name="username" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="Entrer le mot de passe" ngModel name="password" required>
                 
-                <input type="submit" id='submit' value='Login' >
+                <input type="submit" id='i' [disabled]="form.invalid" value='Login' >
             </form>
         </div>
 </body>         

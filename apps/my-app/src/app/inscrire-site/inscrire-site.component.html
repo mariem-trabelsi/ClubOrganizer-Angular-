@@ -14,25 +14,25 @@
     </div>  
     <div class="col-md-1"></div>
     <div class="col-md-5">
-    <form>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="mb-3">
-          <label for="exampleInputEmail1"  style="font-size: 25px;  font-family: serif;" class=" form-label">Nom</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="name"  style="font-size: 25px;  font-family: serif;" class=" form-label">Nom</label>
+          <input type="text"  required name="name" ngModel class="form-control" id="name" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1"  style="font-size: 25px;  font-family: serif;" class="form-label">Prenom</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <label for="prenom"  style="font-size: 25px;  font-family: serif;" class="form-label">Prenom</label>
+          <input type="text"  required name="prenom" ngModel class="form-control" id="prenom">
         </div>
         <div>
             <div class="mb-3">
-                <label for="x"  style="font-size: 25px;  font-family: serif;" class="form-label">l'adresse email</label>
-                <input type="email"  style="font-size: 25px;  font-family: serif;" placeholder="nom.prenom@isticbc.org" class="form-control" id="x">
+                <label for="mail"  style="font-size: 25px;  font-family: serif;" class="form-label">l'adresse email</label>
+                <input type="email"  required id="mail"  style="font-size: 25px;  font-family: serif;" placeholder="nom.prenom@isticbc.org" class="form-control" ngModel name="mail">
               </div>
               <div class="mb-3">
-                <label for="y"  style="font-size: 25px;  font-family: serif;" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="y" required>
+                <label for="pass"  style="font-size: 25px;  font-family: serif;" class="form-label">Mot de passe</label>
+                <input type="password"  required  ngModel name="pass" class="form-control" id="pass" required>
               </div>
-            <button id="abc" type="submit">ENREGISTRER </button>
+            <button id="abc" type="submit" [disabled]="f.invalid">ENREGISTRER </button>
             <button type="reset" > ANNULER</button>
         </div>
       </form>
