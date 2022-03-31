@@ -1,47 +1,19 @@
 <html>
-<body class="container" style="padding-top:110px;">
+<body class="container" style="padding-top:110px;"> 
   <div style="padding-right:130px ;padding-left:130px;font-family: cursive; padding-bottom: 3px;" class="form-group ">
-    <label for="bio"></label>
-    <textarea  [(ngModel)]="publication.contenu" class="form-control" id="bio"  rows="3" placeholder="Quoi de neuf ?"></textarea>
+    <label for="zoneText"></label>
+    <textarea  class="form-control" id="zoneText"  rows="3" placeholder="Quoi de neuf ?"></textarea>
   </div>
 
   <div style="padding-left:130px">
-  <button id="b"  onclick="fCopie()" type="button" (click)="addPub()" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
+  <button id="b"  type="button" (click)="addPub($event)" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
+  </div>
+  <div class="text-center" id="zoneAffichage">
+
   </div>
 
-  <p id="ok" class="text-center"></p>
- <div *ngIf="publications.length >0; else noPublications" >
-  <div id="pub">
-       <p *ngFor="let c in publications">
-                   {{c.contenu}}
-       </p>
-  </div>
-</div>
-
-
-<div style="padding-left:130px; display: none;">
-  <div class="card" style="width: 50rem;">
-    <div class="card-body">
-      <h5 class="card-title">Ahmed Trabelsi</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Proposition</h6>
-      <p class="card-text" id="pub"> </p>
-    </div>
-  </div>
-</div>
-
-<ng-template #noPublications>
-<p style="font-family: cursive;" class="text-center"> Pas de Publications !</p>
-</ng-template>
-<p class="text-center info-text" style="padding-top:100px; font-family: cursive;">
-Vous ne pouvez pas paratager aucune publication sans être  membre dans <strong>ClubOrganizer</strong> .Vous êtes les bienvenus !
-</p>
-
-<script>
-function fCopie() {
-document.getElementById('ok').innerHTML = document.getElementById('bio').innerHTML;
-}
-</script>
-</body>
+  <div  class="text-center"> vous ne pouvez pas publier sans etre inscrits .Vous etes les bienvenus </div>
+  </body>
 <footer>
   <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:cursive"> Powered by <i class="fas fa-power-off"> glsi</i></p>
 </footer>
