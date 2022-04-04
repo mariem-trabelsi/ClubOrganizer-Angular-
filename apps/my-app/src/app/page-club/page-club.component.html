@@ -1,6 +1,37 @@
 <html>
-<body class="container" style="padding-top:110px;"> 
-  <div style="padding-right:130px ;padding-left:130px;font-family: cursive; padding-bottom: 3px;" class="form-group ">
+
+<body class="container"> 
+  <div class="row-12">
+    
+      <nav style="font-weight: bolder; margin:20px 30px;" class=" container navbar navbar-dark bg-dark">
+        
+  
+          <ul class="nav nav-pills">
+            <li  >
+              <a style="padding-right: 30px;" class="navbar-brand"  ><i class="fas fa-home"></i> Nom Club</a>
+            </li>
+          <li class="nav-item">
+              <a class="navbar-brand"   style="padding-right: 30px;" routerLink="/event">Even<i class="far fa-calendar"></i>  t</a>
+          </li>
+              <li class="nav-item">
+                <a class="navbar-brand"   routerLink="/meetings">Réunions</a>
+              </li>
+          </ul> 
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Liste des membres
+            </a>
+          
+            <ul style="padding-left: 30px;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Les Membres </a></li>
+              <li><a class="dropdown-item" href="#">Nouvelle demandes d'abonnements</a></li>
+            </ul>
+          </div>
+      
+      </nav>
+    </div>
+    <div class="row-12">
+  <div style="padding-right:130px ;padding-left:130px;font-family:'Courier New', Courier, monospace; padding-bottom: 3px;" class="form-group ">
     <label for="zoneText"></label>
     <textarea  class="form-control" id="zoneText2"  rows="3" placeholder="Quoi de neuf ?"></textarea>
   </div>
@@ -11,10 +42,12 @@
   <div class="text-center" id="zoneAffichage2">
 
   </div>
+</div>
+
 
   </body>
 <footer>
-  <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:cursive"> Powered by <i class="fas fa-power-off"> glsi</i></p>
+  <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:'Courier New', Courier, monospace"> <strong>Powered by</strong> <i class="fas fa-power-off"> MEK</i></p>
 </footer>
 
 </html>

@@ -1,0 +1,59 @@
+
+
+html{
+    background-color :lavenderblush
+}
+
+body{
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    position: relative;
+    padding-bottom:30px;
+   
+}
+
+
+footer {
+        padding: 5px;
+        background-color:lemonchiffon;
+        color: black;
+        width: 100%;
+        position:fixed;
+        height:70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top:8px;
+    }
+
+
+    textarea{
+        background-color:lightyellow;
+        color: black;
+        border: none;
+        cursor: pointer;
+        height: 200px;
+        font-family: cursive;
+    }
+    textarea:hover {
+        background-color:lightgrey;
+        border: 1px solid black;
+    }
+
+    
+   button{
+        background-color:plum;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-family: cursive;
+        text-align: center;
+    }
+    button:hover {
+        background-color:lavenderblush;
+        border: 2px solid black;
+        font-weight:2rem;
+        
+    }
