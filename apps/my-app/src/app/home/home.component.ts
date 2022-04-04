@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { SharedService } from '../shared.service';
 
 
 @Component({
@@ -32,9 +34,26 @@ export class HomeComponent implements OnInit {
   text.value=""
   }
 
-  constructor() { }
+  clickEventSubscription:Subscription;
+  constructor(private sharedService:SharedService) {
+    this.clickEventSubscription=this.sharedService.getClickEvent().subscribe(()=>
+    {
+
+    })
+   }
   ngOnInit(): void {}
 
+  
+  changebtn(event:Event)
+  {
+    var bt=<HTMLButtonElement> document.getElementById("b")
+    if(localStorage.getItem("disabled")=="false")
+    { bt.disabled=false}
+    else
+    {
+      bt.disabled=true
+    }
+  }
  
 }
 

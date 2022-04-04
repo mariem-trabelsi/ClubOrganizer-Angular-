@@ -21,22 +21,22 @@ textarea {
 input[reset][submit]{
     color: white;
     border: none;
-    font-family: cursive;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
 input[type=reset]:hover {
-    background-color: lavenderblush;
-    color:lightpink;
+    background-color: darkblue;
+    color:white;
     border: 1px solid lavenderblush;
 }
 
 input[type=submit]:hover {
-    background-color: lavenderblush;
-    color:lightpink;
+    background-color:darkblue;
+    color:white;
     border: 1px solid lavenderblush;}
     
 .btn {
-    background-color:plum;
+    background-color:grey;
 
     border: none;
     padding: 16px 32px;

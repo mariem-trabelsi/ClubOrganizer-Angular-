@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { InscritService } from './services/inscrit.service';
+
 
 
 @Component({
@@ -9,11 +9,11 @@ import { InscritService } from './services/inscrit.service';
 })
 export class AppComponent implements OnInit {
   title = 'my-app';
-  constructor(private inscritService: InscritService){
+  constructor(){
 
 
   }
-  ngOnInit(){
+  ngOnInit(){localStorage.setItem("disabled", "true");
     
     
   }

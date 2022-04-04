@@ -20,7 +20,7 @@ import { MeetingsComponent } from './meetings/meetings.component';
 import { ParametresComponent } from './parametres/parametres.component';
 import { EventComponent } from './event/event.component';
 import { PageClubComponent } from './page-club/page-club.component';
-import { InscritService } from './services/inscrit.service'; 
+
 
 const appRoutes: Routes =[
   {path:'creerClub',component:CreerClubComponent},
@@ -60,7 +60,7 @@ const appRoutes: Routes =[
     AppRoutingModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [InscritService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,24 +1,21 @@
 
 
-html{
-    background-image: url(https://www.epfl.ch/education/master/wp-content/uploads/2018/11/CDM_MTE_MA_X-1920x1080.jpg);
 
-}
 
 body{
     scroll-behavior: smooth;
     align-items: center;
     justify-content: center;
     min-height: 100%;
-    position: relative;
-    padding-bottom:30px;
-   
+    position:relative;
+    padding-bottom:150px;
+    background-color:white
 }
 
 
 footer {
         padding: 5px;
-        background-color:lemonchiffon;
+        background-color:lightyellow;
         color: black;
         width: 100%;
         position:fixed;
@@ -31,7 +28,7 @@ footer {
 
 
     textarea{
-        background-color:lightyellow;
+        background-color:aliceblue;
         color: black;
         border: none;
         cursor: pointer;
@@ -39,17 +36,17 @@ footer {
         font-family: cursive;
     }
     textarea:hover {
-        background-color:lightgrey;
+        background-color:white;
         border: 1px solid black;
     }
 
     
    button{
-        background-color:plum;
+        background-color:darkblue;
         color: white;
         border: none;
         cursor: pointer;
-        font-family: cursive;
+        font-family:'Courier New', Courier, monospace;
         text-align: center;
     }
     button:hover {

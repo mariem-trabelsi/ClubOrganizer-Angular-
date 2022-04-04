@@ -1,21 +1,20 @@
-<html>
-<body class="container" style="padding-top:110px;"> 
+
+<body class="container" style="padding-top:110px;" (window:load)="changebtn($event)"> 
   <div style="padding-right:130px ;padding-left:130px;font-family:'Courier New', Courier, monospace; padding-bottom: 3px;" class="form-group ">
     <label for="zoneText"></label>
     <textarea  class="form-control" id="zoneText"  rows="3" placeholder="Quoi de neuf ?"></textarea>
   </div>
 
   <div style="padding-left:130px">
-  <button id="b"  type="button" (click)="addPub($event)" style="width: 200px;"  type="submit" [disabled]="isAuth" class="btn">publier</button>
+  <button id="b"  type="button" (click)="addPub($event)" style="width: 200px;"  type="submit" disabled class="btn">publier</button>
   </div>
   <div class="text-center" id="zoneAffichage">
 
   </div>
 
   <div  class="text-center"> vous ne pouvez pas publier sans être inscrits .Vous êtes les bienvenus ! </div>
-  </body>
+</body>
 <footer>
   <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:'Courier New', Courier, monospace"><strong> Powered by </strong> <i class="fas fa-power-off"> MEK</i></p>
 </footer>
 
-</html>
