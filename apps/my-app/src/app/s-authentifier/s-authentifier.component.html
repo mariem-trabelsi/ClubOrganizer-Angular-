@@ -5,9 +5,13 @@
                 
                 <label><b>Nom d'utilisateur</b></label>
                 <input type="text" placeholder="Entrer le nom d'utilisateur" ngModel name="username" required>
-
+                  <div>
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" ngModel name="password" required>
+                <input  type="password" placeholder="Entrer le mot de passe" ngModel name="password" required>
+                <span class="text-danger" ng-show="registerForm.Password.$error.minlength">
+                    Doit contenir au minimum 6 caractères
+                  </span>
+                </div>
                 
                 <input type="submit" id='i' [disabled]="form.invalid" value='Login' >
             </form>

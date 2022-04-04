@@ -21,7 +21,7 @@ footer {
         background-color:lemonchiffon;
         color: black;
         width: 100%;
-        position:relative;
+        position:fixed;
         height:70px;
         bottom: 0;
         left: 0;

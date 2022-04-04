@@ -1,11 +1,10 @@
 #yes{
     align-items: center;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaQyQZ3lh2IhxGswxreZHO5wCK1YkfkNB5w&usqp=CAU);
+    background-image: url(https://www.bazaaretcompagnie.com/wp-content/uploads/image-professionnelle.jpg);
     background-position:right;
     background-attachment: fixed;
     display: flex;
-    background-repeat: round;
-}
+    background-repeat:space}
 textarea {
     width: 100%;
     height: 150px;

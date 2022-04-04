@@ -1,7 +1,7 @@
 <div class="container">
     <br>
     <div class="row">
-        <h1 style="font-family:'Courier New', Courier, monospace; font-weight:1000px;" class="text-center">DEVENEZ UN MEMBRE! </h1>
+        <h1 style="font-family:'Courier New', Courier, monospace; font-weight:2000px;" class="text-center">DEVENEZ UN MEMBRE! </h1>
     </div>
     <br>
     <div class="row">
@@ -14,7 +14,10 @@
             <div>
                   <div class="mb-3">
                     <label for="pass"  style="font-size: 25px;  font-family: serif;" class="form-label">Mot de passe:</label>
-                    <input type="password" name="pwd" ngModel  required class="form-control" id="pass" required>
+                    <input   ng-minlength="6" type="password" name="pwd" ngModel  required class="form-control" id="pass" required>
+                    <span class="text-danger" ng-show="registerForm.Password.$error.minlength">
+                      Doit contenir au minimum 6 caractères
+                    </span>
                   </div>
                   
                   <div class="mb-3">
