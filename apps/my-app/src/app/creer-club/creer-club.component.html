@@ -1,40 +1,40 @@
  <div  class="container">
         <div class="row-12">
-            <h1 class=" text-center" style=" font-family: cursive;font-weight: 850;">Créez votre club </h1> 
-            <h2 class=" text-center" style=" font-family: cursive;font-weight: 600;"> Tentez votre chance !</h2>
+            <h1 class=" text-center" style=" font-family:'Courier New', Courier, monospace;font-weight: 850;">Créez votre club </h1> 
+            <h2 class=" text-center" style=" font-family:'Courier New', Courier, monospace;font-weight: 600;"> Tentez votre chance !</h2>
         </div>
     <div class="row-12">
         <div class="col-md-6">
-        <form>
+        <form (ngSubmit)="onSubmit4(formu)" #formu="ngForm">
             <div>
-              <label for="i1"  style="font-size: 25px;  font-family: serif;" class=" form-label">Nom</label>
-              <input type="text" class="form-control" id="i1" aria-describedby="emailHelp">
+              <label for="nom"  style="font-size: 25px;  font-family: serif;" class=" form-label">Nom</label>
+              <input type="text"  required name="name" ngModel  class="form-control" id="nom" aria-describedby="emailHelp">
             </div>
 
 
             <div>
-              <label for="i2"  style="font-size: 25px;  font-family: serif;" class="form-label">Prénom</label>
-              <input type="text" class="form-control" id="i2">
+              <label for="prenom"  style="font-size: 25px;  font-family: serif;" class="form-label">Prénom</label>
+              <input type="text"  required name="prenom" ngModel  class="form-control" id="prenom">
             </div>
 
 
             <div>
-            <label for="i7"  style="font-size: 25px;  font-family: serif;" class="form-label">Nom du club</label>
-              <input type="text" class="form-control" id="i7">
+            <label for="nomClub"  style="font-size: 25px;  font-family: serif;" class="form-label">Nom du club</label>
+              <input type="text"  required name="nomClub" ngModel class="form-control" id="i7">
             </div>
             <div class="mb-3">
-              <label for="i3"  style="font-size: 25px;  font-family: serif;" class="form-label">l'adresse email</label>
-              <input type="email"  style="font-size: 25px;  font-family: serif;" placeholder="nom.prenom@istic.ucar.tn" class="form-control" id="i3">
+              <label for="mail"  style="font-size: 25px;  font-family: serif;" class="form-label">l'adresse email</label>
+              <input type="email"  required name="mail" ngModel style="font-size: 25px;  font-family: serif;" placeholder="nom.prenom@istic.ucar.tn" class="form-control" id="i3">
             </div>
 
                 <div class="mb-3">
                     <h3 style="font-family: serif;" >Pourquoi créer ce club ?  </h3>
-                    <form>
-                      <textarea placeholder="Dites nous quelque chose .. "> </textarea>
-                    </form>
+                    
+                      <textarea required name="obj" ngModel placeholder="Dites nous quelque chose .. "> </textarea>
+                    
                  </div>
                 
-                  <input  class="btn" type="submit" value="Enregistrer">
+                  <input  class="btn" type="submit"  [disabled]="formu.invalid" value="Enregistrer">
                   <input  class="btn" type="reset" value="Annuler">
           </form>
         </div> 
