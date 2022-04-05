@@ -20,6 +20,7 @@ import { MeetingsComponent } from './meetings/meetings.component';
 import { ParametresComponent } from './parametres/parametres.component';
 import { EventComponent } from './event/event.component';
 import { PageClubComponent } from './page-club/page-club.component';
+import { ListeMembreSComponent } from './liste-membre-s/liste-membre-s.component';
 
 
 const appRoutes: Routes =[
@@ -31,6 +32,7 @@ const appRoutes: Routes =[
   {path:'logo',component:LogoComponent},
   {path:'meetings',component:MeetingsComponent},
   {path:'event',component:EventComponent},
+  {path:'listeMembreS',component:ListeMembreSComponent},
   {path:'parametres',component:ParametresComponent},
   {path:'pageClub',component:PageClubComponent},
   {path:'abonnerClub',component:AbonnerClubComponent},
@@ -52,7 +54,8 @@ const appRoutes: Routes =[
     MeetingsComponent,
     ParametresComponent,
     EventComponent,
-    PageClubComponent
+    PageClubComponent,
+    ListeMembreSComponent
   ],
   imports: [
     BrowserModule,

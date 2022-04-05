@@ -9,5 +9,22 @@ img{
     margin-top: 10px;
 }
 button  {
-    width: 100%  
+    width: 100%  ;
+    background-color: darkblue;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: goldenrod;
+    background-color: black;
+    font-size: 1.9em;
+    font-weight:900px;
+    padding-left: 30px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+ a:hover{
+color:white;
+
 }
