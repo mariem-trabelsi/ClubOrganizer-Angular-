@@ -1,57 +1,48 @@
 
 
 
-
 body{
     scroll-behavior: smooth;
     align-items: center;
     justify-content: center;
     min-height: 100%;
     position:relative;
-    padding-bottom:150px;
-    background-color:white
+    padding-bottom:20px;
+    
 }
 
+h1{
+    color:#CDB3D4;
+}
+.card-body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    background-color: #f0ddf6;
+}
+.btn:hover{
+    background: #CDB3D4;
+    transition: .5s;
+    border-radius: 50% 4px;
+}
+textarea{
+width:50rem;
+cursor: pointer;
+height: 108px; 
+box-shadow: 0px 0px 3px black;
+}
 
 footer {
-        padding: 5px;
-        background-color:lightyellow;
-        color: black;
-        width: 100%;
-        position:fixed;
-        height:70px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-top:8px;
-    }
-
-
-    textarea{
-        background-color:aliceblue;
-        color: black;
-        border: none;
-        cursor: pointer;
-        height: 200px;
-        font-family: cursive;
-    }
-    textarea:hover {
-        background-color:white;
-        border: 1px solid black;
-    }
-
+    padding: 5px;
+    background: linear-gradient(70deg,#B5FFFF, #FCA5F1);
+    color: black;
+    width: 100%;
+    position:fixed;
+    height:70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     
-   button{
-        background-color:darkblue;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-family:'Courier New', Courier, monospace;
-        text-align: center;
-    }
-    button:hover {
-        background-color:darkgray;
-        border: 2px solid black;
-        font-weight:2rem;
-        
-    }
+}

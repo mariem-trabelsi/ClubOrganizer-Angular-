@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
 
     var div=<HTMLDivElement>document.getElementById("zoneAffichage")
     div.innerHTML=div.innerHTML+` <br><div style="padding-left:130px;">
-    <div class="card" style="width: 70rem;">
-      <div class="card-body">
+    <div class="card" style="width: 50rem;">
+      <div class="card-body" style="border-radius:  4px;" >
         <h5 class="card-title">${this.publication.id}</h5>
         <h6 class="card-subtitle mb-2 text-muted"></h6>
         <p class="card-text" id="pub"> ${this.publication.contenu}</p>

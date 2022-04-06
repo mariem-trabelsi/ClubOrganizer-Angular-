@@ -1,27 +1,25 @@
-<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-<ul class="nav nav-pills">
-  <li class="navbar-brand" >
-    <a class="navbar-brand"  routerLink="/home"><i class="fas fa-home"></i>Home</a>
-  </li>
- <!-- <li class="nav-item">
-    <a class="nav-link" routerLink="/event">Even<i class="far fa-calendar"></i>  t</a>
-  </li>-->
-  <li class="nav-item dropdown">
+<div class="navbar">
+  <div class="  col-3">logo</div>
+   <ul class="nav justify-content-center col-6 ">
+   <li class="nav-item">
+     <a class="nav-link "   style="color:white;"aria-current="page"  routerLink="/home"><i class="fas fa-home"></i>Accueil</a>
+   </li>
+   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">Clubs</a>
-    <ul class="dropdown-menu">
-      <li style="font-size: small;"><a class="dropdown-item abc" routerLink="/creerClub">Créer un nouveau club</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li style="font-size: small;"><a class="dropdown-item abc" routerLink="/clubsCards">Voir nos clubs </a></li>
+    <ul class="dropdown-menu" style="font-weight: bold; background: linear-gradient(70deg,#B5FFFF, #FCA5F1);">
+      <li style="font-weight: bold;color: white;"><a class="dropdown-item abc" routerLink="/creerClub">Créer un nouveau club</a></li>
+      
+      <li style="font-weight: bold; color: white;"><a class="dropdown-item abc" routerLink="/clubsCards">Voir nos clubs </a></li>
     </ul>
-    <!--
-    <li class="nav-item">
-      <a class="nav-link"  routerLink="/meetings">Réunions</a>
-    </li>-->
-    <li class="nav-item">
-      <a class="nav-link"  routerLink="/inscrireSite">S'inscrire</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"  routerLink="/parametres"><i class="fas fa-cog"></i></a>
-    </li>
-</ul>
-</nav>
+   
+   
+ </ul>
+ <ul class="nav col-3">
+  <li class="nav-item">
+    <a class="nav-link"  routerLink="/inscrireSite">S'inscrire</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"  routerLink="/parametres"><i class="fas fa-cog"></i></a>
+  </li>
+   </ul>
+</div>

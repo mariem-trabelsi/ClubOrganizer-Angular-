@@ -1,30 +1,23 @@
-nav{
-    background-color:#fff;
-    width:max;
-    font-weight: bolder;
-    padding-top :30px;
-    display: flex; 
-    padding-bottom: 10px;
-    color:rgb(230, 109, 189);
-}
-nav a {
-    text-decoration: none;
-    color:darkblue;
-    font-size: 1.9em;
-    font-weight:900px;
-    padding-left: 30px;
-    font-family:'Courier New', Courier, monospace;
-    
-}
+.navbar{
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px solid ;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: linear-gradient(70deg, #FCA5F1, #B5FFFF);
+  }
+  a:hover{
+    background: #CDB3D4;
+    transition: .5s;
+    border-radius: 50% 4px;
+    background-color: linear-gradient(70deg, #FCA5F1, #B5FFFF);
 
-nav a:hover{
-color:darkorchid;
 
-}
+  }
+  .nav-link{
+    color: white;
 
-.abc{
-    text-decoration: none;
-    color:lightblue;
-    padding-left: 30px;
-    font-family:'Courier New', Courier, monospace;
-}
+  }
+  .center{
+      align-content: center;
+  }

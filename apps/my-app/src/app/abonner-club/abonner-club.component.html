@@ -25,7 +25,7 @@
                     
                     <textarea name="objectif" ngModel required class="form-control" placeholder="Dites nous quelque chose .. "> </textarea>
                   </div>
-                  <input  class="btn"  [disabled]="fo.invalid" type="submit" value="Enregistrer">
+                  <input  class="btn" routerLink="/pageClub" [disabled]="fo.invalid" type="submit" value="Enregistrer">
                   <input  class="btn" type="reset" value="Annuler">
             </div>
           </form>
