@@ -3,7 +3,7 @@
 background-size: cover;
 background-position: center ;
 background-attachment: fixed;
-background: lemonchiffon;
+background-color:aliceblue
 }
 p{
  font-family: "Lucida Console", "Courier New", monospace;
@@ -13,4 +13,16 @@ button:hover {
     background-color: black;
     color:white;
     border: 1px solid lavenderblush;
+}
+footer {
+    padding: 5px;
+    background: linear-gradient(70deg, #FCA5F1,#B5FFFF);
+    color: black;
+    width: 100%;
+    position:fixed;
+    height:70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
 }

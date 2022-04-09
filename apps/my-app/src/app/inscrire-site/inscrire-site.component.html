@@ -1,26 +1,26 @@
-<div style="background-color:white" class="container">
+<div  class="container">
     <div class="row">
-    <div style="font-weight:100px; font-size: 67px; color:goldenrod">
-        <p style="font-family:'Courier New', Courier, monospace;" class=" text-center"><strong> Go into ClubOrganizer !</strong></p>
+    <div style="font-weight:100px; font-size: 67px; color:rgb(25, 24, 22)">
+        <p style="font-family:'Courier New', Courier, monospace;" class=" text-center"><strong>Vous êtes les bienvenus !</strong></p>
     </div>
     </div>
 
 <div class="row">
-    <div class="col-md-5" >
-        <h1>À propos</h1>
+    <div class="col-md-5"style=" padding:40px;" >
+        <h1> À propos</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vel expedita dolorem error nulla corporis aliquam amet nostrum nihil, perspiciatis corrupti, libero dignissimos ducimus, repudiandae saepe dicta quidem commodi maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat quaerat odit nam fugit commodi quod rerum delectus labore iure, expedita maiores iusto ullam dolorem cum nulla, porro tempora dolores!
       </p>  
     </div>  
-    <div class="col-md-1"></div>
-    <div class="col-md-5" style="background-color:lightgoldenrodyellow;">
+    <div class="col-md-1" ></div>
+    <div class="col-md-5">
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="mb-3">
-          <label for="name"  style="font-size: 25px;  font-family: serif;" class=" form-label">Nom</label>
+          <label for="name"  style="font-size: 25px;  font-family:'Courier New', Courier, monospace;" class=" form-label">Nom:</label>
           <input type="text"  required name="name" ngModel class="form-control" id="name" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="prenom"  style="font-size: 25px;  font-family: serif;" class="form-label">Prenom</label>
+          <label for="prenom"  style="font-size: 25px;  font-family:'Courier New', Courier, monospace;" class="form-label">Prénom:</label>
           <input type="text"  required name="prenom" ngModel class="form-control" id="prenom">
         </div>
         <div>  
@@ -28,22 +28,25 @@
          
 
             <div class="mb-3">
-                <label for="mail"  style="font-size: 25px;  font-family: serif;" class="form-label">l'adresse email</label>
+                <label for="mail"  style="font-size: 25px;  font-family:'Courier New', Courier, monospace;" class="form-label">l'adresse email:</label>
                 <input type="email"  required id="mail"  style="font-size: 25px;  font-family: serif;" placeholder="nom.prenom@isticbc.org" class="form-control" ngModel name="mail">
               </div>
               <div class="mb-3">
-                <label for="pass"  style="font-size: 25px;  font-family: serif;" class="form-label">Mot de passe</label>
-                <input   ng-minlength="6" type="password"  required  ngModel name="pass" class="form-control" id="pass" required>
-                <span class="text-danger" ng-show="registerForm.Password.$error.minlength">
+                <label for="pass"  style="font-size: 25px;  font-family:'Courier New', Courier, monospace;" class="form-label">Mot de passe:</label>
+                <input   ng-minlength ="6" type="password"  required  ngModel name="pass" class="form-control" id="pass" required>
+                <span class="text-danger"  ng-show="registerForm.Password.$error.minlength">
                   Doit contenir au minimum 6 caractères
                 </span>
               </div>
             <button id="abc" routerLink="/home" type="submit" (click)="auth($event)" [disabled]="f.invalid">ENREGISTRER </button>
-            <button type="reset" > ANNULER</button>
+            <button type="reset" >ANNULER</button>
         </div>
       </form>
     </div>   
 </div>
 </div>
+<footer>
+  <p  class="text-center" style="font-weight: bolder; font-size:larger; font-family:'Courier New', Courier, monospace"><strong> Powered by </strong> <i class="fas fa-power-off"> MEK</i></p>
+</footer>
 
 

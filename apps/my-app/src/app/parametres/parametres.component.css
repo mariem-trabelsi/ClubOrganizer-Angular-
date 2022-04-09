@@ -1,6 +1,10 @@
 .container{
   
     margin-top: 20px;
+    background-image:url() ;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
 }
 form{
     margin-top: 20px;
@@ -10,21 +14,20 @@ img{
 }
 button  {
     width: 100%  ;
-    background-color: darkblue;
     color: white;
 }
-a {
+
+a{
     text-decoration: none;
-    color: goldenrod;
-    background-color: black;
-    font-size: 1.9em;
-    font-weight:900px;
+    color: rgb(175, 175, 243);
+    font-size: 1.1em;
+    font-weight:bolder;
     padding-left: 30px;
     font-family:'Courier New', Courier, monospace;
     
 }
 
  a:hover{
-color:white;
+color:rgb(84, 143, 236);
 
 }

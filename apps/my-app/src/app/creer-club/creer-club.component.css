@@ -10,13 +10,14 @@ textarea {
     resize: none;
 }
 .container{
-    background-image: url(https://www.formatiques.com/wp-content/uploads/sites/61/2014/10/2014-10-22_151724.png);
-    background-position:right;
+  
+    background-color:aliceblue;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-color: lemonchiffon;
+    background-position: right;
+    background-image: url(https://www.emarketinglicious.fr/wp-content/uploads/2010/09/creer-page-facebook-entreprise.jpg);
+   
 }
-
-
 
 input[reset][submit]{
     color: white;
@@ -44,4 +45,18 @@ input[type=submit]:hover {
     margin: 4px 2px;
     cursor: pointer;
   }
- 
+  col-md-5{
+      margin-left: 250px;
+  }
+  footer {
+    padding: 5px;
+    background: linear-gradient(70deg,#B5FFFF, #FCA5F1);
+    color: black;
+    width: 100%;
+    position:relative;
+    height:70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}

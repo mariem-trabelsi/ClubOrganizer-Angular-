@@ -21,6 +21,7 @@ import { ParametresComponent } from './parametres/parametres.component';
 import { EventComponent } from './event/event.component';
 import { PageClubComponent } from './page-club/page-club.component';
 import { ListeMembreSComponent } from './liste-membre-s/liste-membre-s.component';
+import { ListClubsComponent } from './list-clubs/list-clubs.component';
 
 
 const appRoutes: Routes =[
@@ -35,6 +36,7 @@ const appRoutes: Routes =[
   {path:'listeMembreS',component:ListeMembreSComponent},
   {path:'parametres',component:ParametresComponent},
   {path:'pageClub',component:PageClubComponent},
+  {path:'listClubs',component: ListClubsComponent},
   {path:'abonnerClub',component:AbonnerClubComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
 
@@ -55,7 +57,8 @@ const appRoutes: Routes =[
     ParametresComponent,
     EventComponent,
     PageClubComponent,
-    ListeMembreSComponent
+    ListeMembreSComponent,
+    ListClubsComponent
   ],
   imports: [
     BrowserModule,

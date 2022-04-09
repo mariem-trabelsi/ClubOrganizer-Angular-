@@ -23,6 +23,7 @@ onSubmit(form: NgForm){
   const pass=form.value['pass'];
   console.log(name,prenom,mail,pass);
 }
+
 auth(event:Event)
 {
   localStorage.setItem("disabled", "false");

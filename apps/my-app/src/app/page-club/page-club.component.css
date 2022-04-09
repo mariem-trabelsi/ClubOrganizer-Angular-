@@ -1,8 +1,5 @@
 
 
-html{
-    background-color :lavenderblush
-}
 
 body{
     scroll-behavior: smooth;
@@ -17,7 +14,7 @@ body{
 
 footer {
         padding: 5px;
-        background-color:lemonchiffon;
+        background: linear-gradient(70deg, #FCA5F1,#B5FFFF);;
         color: black;
         width: 100%;
         position:fixed;
@@ -30,7 +27,7 @@ footer {
 
 
     textarea{
-        background-color:lightyellow;
+        background-color:aliceblue;
         color: black;
         border: none;
         cursor: pointer;
