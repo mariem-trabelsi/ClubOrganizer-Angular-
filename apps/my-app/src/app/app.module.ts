@@ -1,6 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from "@angular/forms";
 
+//angularfire imports
+/*import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
+//environment import
+import { environment } from "../environments/environment";*/
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +18,10 @@ import { AbonnerClubComponent } from './abonner-club/abonner-club.component';
 import { CreerClubComponent } from './creer-club/creer-club.component';
 import { SAuthentifierComponent } from './s-authentifier/s-authentifier.component';
 import { CardsClubsComponent } from './cards-clubs/cards-clubs.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 import {FormsModule} from '@angular/forms';
 import{RouterModule,Routes} from '@angular/router';
@@ -22,6 +33,13 @@ import { EventComponent } from './event/event.component';
 import { PageClubComponent } from './page-club/page-club.component';
 import { ListeMembreSComponent } from './liste-membre-s/liste-membre-s.component';
 import { ListClubsComponent } from './list-clubs/list-clubs.component';
+import { TestComponent } from './test/test.component';
+import { PubService } from './pub.service';
+
+
+
+
+
 
 
 const appRoutes: Routes =[
@@ -58,15 +76,22 @@ const appRoutes: Routes =[
     EventComponent,
     PageClubComponent,
     ListeMembreSComponent,
-    ListClubsComponent
+    ListClubsComponent,
+    TestComponent
   ],
-  imports: [
+  imports:[
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    ReactiveFormsModule,
+ 
+
+    
+    
   ],
-  providers: [],
+  providers: [PubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

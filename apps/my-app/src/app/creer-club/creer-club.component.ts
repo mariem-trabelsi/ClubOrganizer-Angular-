@@ -12,7 +12,7 @@ export class CreerClubComponent implements OnInit {
   ngOnInit(): void {
   }
   ajouterClub(event:Event){
-    
+  
     /*
     var text=<HTMLInputElement> document.getElementById("zoneText")
     
@@ -31,12 +31,12 @@ export class CreerClubComponent implements OnInit {
 
     
   }
-  onSubmit4(form: NgForm){
-    const nom=form.value['name'];
-    const prenom=form.value['prenom'];
-    const nomClub=form.value['nomClub'];
-    const mail=form.value['mail'];
-    const textarea=form.value['obj']
+  onSubmit4(formu: NgForm){
+    const nom=formu.value['name'];
+    const prenom=formu.value['prenom'];
+    const nomClub=formu.value['nomClub'];
+    const mail=formu.value['mail'];
+    const textarea=formu.value['obj']
     console.log(nom,prenom,nomClub,mail,textarea);
     
   

@@ -14,11 +14,7 @@ body{
 h1{
     color:#CDB3D4;
 }
-.card-body{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .btn{
     background-color: #f0ddf6;
 }

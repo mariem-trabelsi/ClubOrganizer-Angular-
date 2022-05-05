@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { SharedService } from '../shared.service';
+import { PubService } from '../pub.service';
 
 
 @Component({
@@ -33,9 +34,22 @@ export class HomeComponent implements OnInit {
   this.i++;
   text.value=""
   }
+  pub:any={};
 
   clickEventSubscription:Subscription;
-  constructor(private sharedService:SharedService) {
+  constructor(private sharedService:SharedService, public _PubService:PubService) {
+
+   this._PubService.getAffiche().subscribe((data)=> 
+   
+   {
+    this.pub =data.president;
+     
+   }
+   );
+
+
+
+
     this.clickEventSubscription=this.sharedService.getClickEvent().subscribe(()=>
     {
 
@@ -54,6 +68,7 @@ export class HomeComponent implements OnInit {
       bt.disabled=true
     }
   }
+  
  
 }
 
